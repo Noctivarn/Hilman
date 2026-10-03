@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hilman Putra Maulana — Biodata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+    --ungu:#0284C7;
+    --ungu-tua:#075985;
+    --teks-gelap:#0F172A;
+    --teks-abu:#475569;
+    --putih:#FFFFFF;
+    --biru-muda:#e0f2fe;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{min-height:100%}
+body{
+    font-family:'Poppins',sans-serif;
+    color:var(--teks-gelap);
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+    background:linear-gradient(-45deg,#e0f2fe,#bae6fd,#7dd3fc,#a5f3fc,#dbeafe);
+    background-size:400% 400%;
+    animation:gradasiBiru 12s ease infinite;
+}
+@keyframes gradasiBiru{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* Bola-bola biru melayang */
+body::before,body::after{content:"";position:fixed;border-radius:50%;filter:blur(80px);z-index:-1;opacity:.6;pointer-events:none}
+body::before{width:420px;height:420px;background:#38bdf8;top:-100px;left:-100px;animation:melayang1 14s ease-in-out infinite alternate}
+body::after{width:360px;height:360px;background:#22d3ee;bottom:-100px;right:-80px;animation:melayang2 16s ease-in-out infinite alternate}
+@keyframes melayang1{to{transform:translate(200px,150px) scale(1.2)}}
+@keyframes melayang2{to{transform:translate(-220px,-120px) scale(1.15)}}
+
+main{max-width:700px;margin:0 auto;padding:32px 16px 60px}
+
+/* Hero */
+.hero{text-align:center;padding:12px 0 8px}
+.foto{width:170px;height:170px;margin:0 auto 22px;position:relative}
+.foto::before{content:"";position:absolute;inset:-12px;background:var(--putih);border-radius:50%;box-shadow:0 10px 40px rgba(2,132,199,.25)}
+.foto img,.foto .inisial{position:relative;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:top center;display:block}
+.foto .inisial{background:var(--ungu);color:var(--putih);display:grid;place-items:center;font-size:3.2rem;font-weight:800}
+.sapaan{color:var(--ungu);font-weight:600}
+.nama{font-size:2.2rem;font-weight:800;line-height:1.15;margin:6px 0 8px}
+.jabatan{color:var(--teks-abu);font-size:1.1rem}
+.motto{color:var(--teks-abu);font-style:italic;margin-top:12px}
+
+/* Kartu */
+section{
+    margin-top:20px;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(6px);
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 10px 30px rgba(2,132,199,.15);
+}
+h2{font-size:1.15rem;font-weight:700;color:var(--ungu-tua);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--biru-muda)}
+p{color:var(--teks-abu);line-height:1.7}
+
+dl{display:grid;grid-template-columns:minmax(120px,34%) 1fr;gap:10px 14px}
+dt{color:var(--teks-abu)}
+dd{font-weight:500}
+
+/* Garis waktu */
+.tl{list-style:none;padding-left:20px;border-left:2px solid #bae6fd}
+.tl li{position:relative;margin-bottom:18px}
+.tl li:last-child{margin-bottom:0}
+.tl li::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--ungu);box-shadow:0 0 0 4px var(--biru-muda)}
+.tl b{display:block}
+.tl small{color:var(--teks-abu)}
+
+/* Keahlian */
+.bar{margin-bottom:14px}
+.bar div:first-child{display:flex;justify-content:space-between;font-size:.95rem;margin-bottom:5px;font-weight:500}
+.track{height:9px;background:var(--biru-muda);border-radius:99px;overflow:hidden}
+.track i{display:block;height:100%;background:linear-gradient(90deg,#38bdf8,var(--ungu));border-radius:99px}
+
+/* Chip */
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.chips li{background:var(--biru-muda);color:var(--ungu-tua);font-weight:500;padding:6px 16px;border-radius:999px;font-size:.92rem}
+
+/* Hobi */
+.hobi{display:grid;grid-template-columns:repeat(auto-fill,minmax(135px,1fr));gap:12px}
+.hobi div{background:var(--biru-muda);border-radius:16px;padding:16px 10px;text-align:center;font-weight:600;transition:transform .2s ease}
+.hobi div:hover{transform:translateY(-3px)}
+.hobi span{font-size:1.8rem;display:block;margin-bottom:2px}
+.hobi small{display:block;color:var(--teks-abu);font-weight:400}
+
+ul.plain{padding-left:20px;color:var(--teks-abu);line-height:1.8}
+
+@media (max-width:480px){
+    .nama{font-size:1.7rem}
+    section{padding:20px 18px}
+    dl{grid-template-columns:1fr;gap:0}
+    dt{margin-top:10px}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+    <div class="foto">
+        <!-- Ganti dengan fotomu: <img src="img/foto-profil.jpeg" alt="Foto Hilman"> -->
+        <div class="inisial">H</div>
+    </div>
+    <p class="sapaan">Halo Semua, Saya</p>
+    <h1 class="nama">Hilman Putra Maulana</h1>
+    <p class="jabatan">IT Programmer</p>
+    <p class="motto">"Tulis motto atau kutipan favoritmu di sini."</p>
+</header>
+
+<section>
+    <h2>Data Pribadi</h2>
+    <dl>
+        <dt>Nama lengkap</dt><dd>Hilman Putra Maulana</dd>
+        <dt>Nama panggilan</dt><dd>Hilman</dd>
+        <dt>Tempat, tanggal lahir</dt><dd>Bangkinang, 20 Oktober 2008</dd>
+        <dt>Usia</dt><dd>17 tahun</dd>
+        <dt>Jenis kelamin</dt><dd>Laki-laki</dd>
+        <dt>Agama</dt><dd>Islam</dd>
+        <dt>Status</dt><dd>-</dd>
+        <dt>Golongan darah</dt><dd>-</dd>
+        <dt>Tinggi / berat badan</dt><dd>170 cm / 48 kg</dd>
+        <dt>Alamat</dt><dd>Perum. Korem Blok C-9, Simpang Tiga, Pekanbaru</dd>
+        <dt>Kewarganegaraan</dt><dd>Indonesia</dd>
+    </dl>
+</section>
+
+<section>
+    <h2>Pendidikan</h2>
+    <ol class="tl">
+        <li><b>SMK Negeri 6 Pekanbaru</b><small>Rekayasa Perangkat Lunak (RPL) · 2024 - 2027</small></li>
+        <li><b>SMP Negeri 35 Pekanbaru</b><small>2021 - 2024</small></li>
+        <li><b>SDIT Al-Madinah</b><small>2016 - 2021</small></li>
+    </ol>
+</section>
+
+<section>
+    <h2>Pengalaman</h2>
+    <ol class="tl">
+        <li><b>Ketua Koordinator Sekbid Pendidikan dan Seni</b><small>OSIS SMK Negeri 6 Pekanbaru · 2021 - 2022</small></li>
+    </ol>
+</section>
+
+<section>
+    <h2>Keahlian</h2>
+    <div class="bar"><div><span>HTML</span><span>80%</span></div><div class="track"><i style="width:80%"></i></div></div>
+    <div class="bar"><div><span>CSS</span><span>35%</span></div><div class="track"><i style="width:35%"></i></div></div>
+    <div class="bar"><div><span>PHP</span><span>90%</span></div><div class="track"><i style="width:90%"></i></div></div>
+</section>
+
+<section>
+    <h2>Bahasa</h2>
+    <ul class="chips">
+        <li>Indonesia</li>
+        <li>Inggris</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Hobi</h2>
+    <div class="hobi">
+        <div><span>🎧</span>Musik<small>Action</small></div>
+        <div><span>📚</span>Membaca<small>-</small></div>
+        <div><span>🎮</span>Gaming<small>ML</small></div>
+        <div><span>⚽</span>Olahraga<small>Badminton</small></div>
+        <div><span>🍜</span>Kuliner<small>Ramen</small></div>
+        <div><span>✈️</span>Traveling<small>Jepang</small></div>
+    </div>
+</section>
+
+<section>
+    <h2>Kesukaan</h2>
+    <dl>
+        <dt>Makanan</dt><dd>Mie</dd>
+        <dt>Minuman</dt><dd>Matcha</dd>
+        <dt>Warna</dt><dd>Biru</dd>
+        <dt>Film / serial</dt><dd>Anime</dd>
+        <dt>Musik / penyanyi</dt><dd>-</dd>
+        <dt>Hewan</dt><dd>Kucing</dd>
+    </dl>
+</section>
+
+<section>
+    <h2>Prestasi &amp; Sertifikat</h2>
+    <ul class="plain">
+        <li>-</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Cita-cita &amp; Tujuan</h2>
+    <ul class="plain">
+        <li>Jangka pendek: Content Creator dan Content Writer</li>
+        <li>Jangka panjang: Programmer</li>
+    </ul>
+</section>
+
+</main>
+</body>
+</html>
